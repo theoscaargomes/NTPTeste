@@ -11,6 +11,6 @@ https://theoscaargomes.wordpress.com/
 
 Depedencies:
 
-$ apt install ntpdate [será necessário instalar essa dependência para funcionamento do script]
+`$ apt install ntpdate` [será necessário instalar essa dependência para funcionamento do script]
 
-$ chmod +x ntp.sh [dar permissão para execução do script]
+`$ chmod +x ntp.sh` [dar permissão para execução do script]
