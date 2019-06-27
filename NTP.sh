@@ -1,16 +1,19 @@
-#variavel para auxiliar no contador de loop
-contador=0;
+# Script Bash release by www.github.com/theoscaargomes
+# Edited 06/2019
+# Contact: www.theoscaargomes.wordpress.com
 
+contador=0; #Variavel auxiliar para contador
 
 #inicio do loop
-for i in `seq 1 800`
+for i in `seq 1 999999`
 do
-    echo "inicio do um novo loop"
-    ntpdate -q 192.168.2.7 #INSERIR AQUI O IP DO SERVIDOR NTP
-        contador=$((contador+1));
-    echo Numero de ciclos executados = $contador
+    echo "----------Inicio do um novo loop----------"
+    ntpdate -q 179.106.238.80 #INSERIR AQUI O IP DO SERVIDOR NTP
+    contador=$((contador+1));
+    echo "Numero de ciclos executados = $contador"
     echo "Hora desta execucao:"
     date +"%T"
+    echo "----------Fim do loop---------------------"
     echo "sleep de 30seg"
     sleep 30s
 done
